@@ -9,9 +9,10 @@ engine is reachable three ways:
 - **MCP server** (`@thunderbit/mcp-server`) — AI assistants: Claude Desktop/Code, Cursor, Cline, ChatGPT
 - **CLI + SDK** (`@thunderbit/thunderbit-cli`) — shell pipelines and programmatic scripts
 
-Each tutorial below is a complete, runnable guide for one industry: the data problem, the
-schema, code for all three surfaces, an end-to-end pipeline, the no-code Chrome-extension
-flow, automation, cost math, and responsible-use guardrails.
+Each tutorial below is a complete, runnable guide: the data problem, the schema, code for
+all three surfaces, an end-to-end pipeline, the no-code Chrome-extension flow, automation,
+cost math, and responsible-use guardrails. Sixteen guides in total — fourteen industry
+playbooks plus two developer-integration guides (building apps and AI agents on the API).
 
 ---
 
@@ -35,7 +36,7 @@ thunderbit distill https://example.com -f markdown
 
 ---
 
-## The six use cases
+## Industry playbooks
 
 | # | Industry | What you'll build |
 |---|----------|-------------------|
@@ -45,6 +46,21 @@ thunderbit distill https://example.com -f markdown
 | 4 | [Social Media Operations](04-social-media-operations.md) | Influencer discovery, public content-performance tracking, open-web brand-mention monitoring |
 | 5 | [Financial Research](05-financial-research.md) | Fundamentals datasets, a filings/transcripts RAG corpus, news-sentiment monitoring, watchlist tracking |
 | 6 | [Recruiting / HR](06-recruiting-hr.md) | Job-market intelligence, competitor hiring monitor, compliant public-portfolio sourcing |
+| 7 | [RAG Knowledge Base](07-rag-knowledge-base.md) | Turn any public docs site into a citable RAG corpus via `distill` — enumerate, batch-distill, chunk, embed, retrieve, incremental refresh |
+| 8 | [Travel & Hospitality](08-travel-hospitality.md) | Rate & availability monitoring across public OTA pages, sellout alerts, review-sentiment digests |
+| 9 | [Academic & Research](09-academic-research.md) | Literature datasets, a paper RAG corpus, new-paper & citation tracking (arXiv/PubMed/Semantic Scholar) |
+| 10 | [News & Media Monitoring](10-news-media-monitoring.md) | Article aggregation, LLM sentiment/entity tagging, coverage-trend & spike alerting |
+| 11 | [Local Business](11-local-business.md) | Local-business datasets, NAP-consistency auditing across sources, review monitoring |
+| 12 | [Government & Public Data](12-government-public-data.md) | Tender/RFP & grant monitoring, solicitation summarization, new-opportunity alerts with deadlines |
+| 13 | [Healthcare & Pharma](13-healthcare-pharma.md) | Clinical-trial datasets, new-trial/recall/label monitoring, protocol RAG — public aggregate data only, not medical advice |
+| 14 | [Manufacturing & Supply Chain](14-manufacturing-supply-chain.md) | Supplier discovery, spec-sheet extraction, price & lead-time monitoring |
+
+## Developer-integration guides
+
+| # | Guide | What you'll learn |
+|---|-------|-------------------|
+| 15 | [App Development](15-app-development.md) | Build a production feature on the API: server-side key handling, SSRF-safe URL validation, caching, async+webhooks, retries, queues, cost controls (Express/Next.js/FastAPI) |
+| 16 | [AI Agent Development](16-ai-agent-development.md) | Give agents web data via the MCP server or HTTP-API function-calling tools; agent loops, distill-vs-extract rules, budget guards, guardrails |
 
 Every guide covers the same three primitives applied to its domain:
 
