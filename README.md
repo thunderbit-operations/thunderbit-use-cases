@@ -1,4 +1,4 @@
-# 3bit-use-cases
+# thunderbit-use-cases
 
 **Six end-to-end tutorials for building real workflows on Thunderbit's web-data platform — via the HTTP API, the MCP server, and the CLI/SDK.**
 
