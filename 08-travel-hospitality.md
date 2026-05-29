@@ -663,7 +663,7 @@ The recommended flow: design and validate the schema interactively in the extens
 
 ## Cost & scale
 
-Prices from the reference: **distill 1 credit**, **suggest_fields 1 credit**, **extract 20 credits**. Batch scales per URL (distill 1/URL, extract 20/URL). **Polling is free.** New accounts get a one-time free allotment (~600 units) — enough to prototype before topping up at <https://thunderbit.com/billing>.
+Prices from the reference: **distill 1 credit**, **suggest_fields 1 credit** *(some docs list it as free — confirm against your plan)*, **extract 20 credits**. Batch scales per URL (distill 1/URL, extract 20/URL). **Polling is free.** New accounts get a one-time free allotment (~600 units) — enough to prototype before topping up at <https://thunderbit.com/billing>.
 
 **Worked example.** A nightly run over **60 properties in one market**, for one date range:
 

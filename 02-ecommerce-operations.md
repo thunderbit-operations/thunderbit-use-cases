@@ -536,7 +536,7 @@ Store each day's snapshot (SQLite/warehouse) so the diff has a baseline and you 
 
 ## Cost & scale
 
-Credit math drives every design decision (extract = 20 credits, distill = 1, suggest_fields = 1, polling = free):
+Credit math drives every design decision (extract = 20 credits, distill = 1, suggest_fields = 1 (some docs list it free), polling = free):
 
 | Job | Volume | Endpoint | Daily credits |
 |-----|--------|----------|---------------|

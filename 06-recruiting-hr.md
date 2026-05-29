@@ -546,7 +546,7 @@ Design and validate a schema interactively in the extension, then port it to the
 
 ## Cost & scale
 
-Pricing (from §9 of the [API reference](docs/thunderbit-api-reference.md)): **distill 1 credit**, **suggest_fields 1 credit**, **extract 20 credits**; batch scales per URL; **polling is free**.
+Pricing (from §9 of the [API reference](docs/thunderbit-api-reference.md)): **distill 1 credit**, **suggest_fields 1 credit** *(some docs list it as free — confirm against your plan)*, **extract 20 credits**; batch scales per URL; **polling is free**.
 
 Worked example — a 1,000-posting detail sweep:
 

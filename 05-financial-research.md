@@ -523,8 +523,9 @@ The decision that dominates your bill is **distill-for-RAG vs. extract-for-metri
 |-----|----------|------|------|
 | Fundamentals table (numbers you'll diff) | `extract` | 20 credits/page | One quote/screener page per ticker |
 | Filings / transcripts / IR text (for RAG) | `distill` | 1 credit/page | Long prose you want to chunk + embed |
-| Schema discovery | `suggest_fields` | 1 credit | Once per page layout |
+| Schema discovery | `suggest_fields` | 1 credit* | Once per page layout |
 | Status polling | — | free | Batch/async jobs |
+*\* Some Thunderbit docs list field suggestion as free — confirm against your plan.*
 
 Worked example: a 50-ticker watchlist refreshing fundamentals daily costs 50 × 20 = 1,000 credits/day. Building a one-time RAG corpus from 50 annual filings costs just 50 × 1 = 50 credits. If you'd reflexively run `extract` over those filings, it would be 50 × 20 = 1,000 credits — 20× more for data you don't need as fields.
 

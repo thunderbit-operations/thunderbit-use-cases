@@ -62,7 +62,7 @@ In Claude Desktop / Cursor / Cline with the Thunderbit MCP server configured, ju
 
 > "Use `thunderbit_suggest_fields` on `https://example-directory.com/agencies/marketing` with the prompt *'Each company listing card: company name, website link, category, city/region, company size'*."
 
-The assistant calls the `thunderbit_suggest_fields` tool (`url`, `prompt`, `countryCode?`) and returns the proposed fields. (Costs 1 credit.)
+The assistant calls the `thunderbit_suggest_fields` tool (`url`, `prompt`, `countryCode?`) and returns the proposed fields. (Costs 1 credit — some Thunderbit docs list it as free; confirm against your plan.)
 
 ### Via curl
 

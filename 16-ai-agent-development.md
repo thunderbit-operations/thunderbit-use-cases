@@ -109,7 +109,7 @@ Whichever path you take, the engine's intended sequence is the same:
 4. thunderbit_batch_*_status   → poll until done                   (free)
 ```
 
-The critical habit to bake into your agent — in the system prompt for Path A, in code for Path B — is **suggest fields before you extract.** `suggest_fields` costs 1 credit and tells the model exactly what the page contains and what a good schema looks like. `extract` costs 20 credits. An agent that jumps straight to `extract` with a guessed schema risks paying 20 credits for fields that aren't on the page, then paying another 20 to retry. Cheap discovery first, then one well-formed extract — that's a 20× difference per misfire.
+The critical habit to bake into your agent — in the system prompt for Path A, in code for Path B — is **suggest fields before you extract.** `suggest_fields` costs 1 credit (some Thunderbit docs list it as free — confirm against your plan) and tells the model exactly what the page contains and what a good schema looks like. `extract` costs 20 credits. An agent that jumps straight to `extract` with a guessed schema risks paying 20 credits for fields that aren't on the page, then paying another 20 to retry. Cheap discovery first, then one well-formed extract — that's a 20× difference per misfire.
 
 The same logic scales to batch: validate the schema on **one** representative page with `suggest_fields` + `extract`, then run `batch_extract_create` over the remaining URLs only once you trust it.
 

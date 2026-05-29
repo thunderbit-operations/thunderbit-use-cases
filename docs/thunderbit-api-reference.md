@@ -3,7 +3,7 @@
 > This is the shared source of truth for every tutorial in this repository.
 > All endpoints, request bodies, and response envelopes below are taken from the
 > official open-source clients (`@thunderbit/mcp-server` and `@thunderbit/thunderbit-cli`)
-> and the Thunderbit docs portal at <https://thunderbit.com/docs>.
+> and the Thunderbit developer docs at <https://docs.thunderbit.com>.
 >
 > If a code sample anywhere in this repo disagrees with this file, **this file wins.**
 
@@ -33,6 +33,7 @@ There are three core capabilities, plus batch and async variants of each:
 Every request authenticates with a bearer token. Get a key from
 <https://app.thunderbit.com/console/api-keys> (the docs portal links it as
 [thunderbit.com/open-api](https://thunderbit.com/open-api)). Keys are prefixed `tb_`.
+Full developer documentation lives at <https://docs.thunderbit.com>.
 
 ```
 Authorization: Bearer tb_your_api_key_here
@@ -486,7 +487,8 @@ The same thin-wrapper pattern works in Go, Ruby, PHP, Java — POST JSON, read `
 
 ## 9. Pricing & free tier
 
-- **Distill:** 1 credit. **Suggest fields:** 1 credit. **Extract:** 20 credits.
+- **Distill:** 1 credit. **Suggest fields:** 1 credit *(some Thunderbit docs list field
+  suggestion as free — confirm against your plan)*. **Extract:** 20 credits.
 - **Batch:** scales per URL (distill 1/URL, extract 20/URL).
 - **Status polling:** free.
 - **Free tier:** new accounts get a one-time allotment (~600 units) — enough to prototype

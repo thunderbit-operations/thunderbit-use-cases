@@ -531,9 +531,10 @@ Credit math is the whole game when monitoring at volume:
 
 | Operation | Cost | 1,000 URLs |
 |-----------|------|------------|
-| `suggest_fields` | 1 credit | 1,000 |
+| `suggest_fields` | 1 credit* | 1,000 |
 | `distill` (mentions, text) | 1 credit / URL | 1,000 |
 | `extract` (structured rows) | 20 credits / URL | 20,000 |
+*\* Some Thunderbit docs list field suggestion as free — confirm against your plan.*
 
 **Distilling mentions is 20× cheaper than extracting them.** For sentiment and theme work you only need clean text, so distill (1/URL) + LLM tagging beats extract (20/URL) every time. Reserve extract for cases where you genuinely need stable, typed columns — the creator shortlist and the YouTube video lists.
 
